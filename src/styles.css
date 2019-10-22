@@ -1,0 +1,87 @@
+/*Resetando os estilos*/
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1rem;
+  font-family: Arial;
+  color: #307fe6;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+  display: flex; /*configura os itens para posicionar um ao lado do outro*/
+  padding: 20px;
+  flex-wrap: wrap; /*quando a tela for pequena, e um ficar perto do outro, o menu irá para baixo.*/
+  align-items: center; /*Alinhar os itens ao centro, para não ficarem desproporcinal oa usar imagens*/
+  background: #307fe6;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  margin-left: 50px;
+}
+
+.menu li {
+  margin-left: 30px;
+  font-size: 0.8rem;
+}
+
+/*Aumentar a área do clique para quando estiver acessando por mobile*/
+.menu li a {
+  display: block;
+  padding: 10px;
+  /* background: tomato; */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  max-height: 200px;
+}
+.flex {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 5000px;
+}
+
+/*Configuração mínima para todos os itens
+flex 1 - se expande
+flex 1 1 - pode ficar menor, flex shrink
+flex 1 1 200px - significa que sempre terá a base de 200px
+se não conseguir ter 200px, irá quebrar.
+*/
+.flex > div {
+  /*falando direto com a div*/
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.submenu {
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 20px;
+  background: #0d0d46;
+  border: 2px solid #2424fd;
+  width: 1000px;
+}
